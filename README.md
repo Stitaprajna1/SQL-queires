@@ -30,6 +30,7 @@
 
 
 --SELECT * FROM Shippings WHERE customer not in (SELECT customer_id from Orders)
+
 --SELECT s.*, o.customer_id 
 --FROM Shippings s 
 --LEFT JOIN Orders o ON
