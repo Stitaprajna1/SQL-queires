@@ -41,6 +41,10 @@
 --except COUNT(col_name) give non-null count
 --COUNT(DISTINCT col_name) gives distinct values
 
+--Running sum
+--SELECT *, SUM(amount) OVER(ORDER BY order_id) AS running_sum
+--FROM Orders;
+
 
 
 
