@@ -37,6 +37,10 @@
 --s.customer = o.customer_id
 --WHERE o.customer_id IS null
 
+--COUNT(*), COUNT(1), COUNT('a') all gives same values
+--except COUNT(col_name) give non-null count
+--COUNT(DISTINCT col_name) gives distinct values
+
 
 
 
