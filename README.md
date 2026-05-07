@@ -45,6 +45,14 @@
 --SELECT *, SUM(amount) OVER(ORDER BY order_id) AS running_sum
 --FROM Orders;
 
+-- Find Median in SQL
+--SELECT AVG(amount) AS Median FROM
+--(SELECT *,
+--ROW_NUMBER() OVER(ORDER BY amount ASC) AS r_desc,
+--ROW_NUMBER() OVER(ORDER BY amount DESC) AS r_asc
+--FROM Orders) a
+--WHERE ABS(a.r_desc - a.r_asc) <=1;
+
 
 
 
