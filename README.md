@@ -54,6 +54,17 @@
 --WHERE ABS(a.r_desc - a.r_asc) <=1;
 
 
+--SELECT * FROM 
+--(WITH cte AS (SELECT amount, COUNT(*) AS cnt
+--FROM Orders
+--GROUP BY amount)
+--SELECT amount,cnt, RANK() OVER(ORDER BY cnt DESC) AS r
+--FROM cte) a
+--WHERE a.r = 1
+
+
+
+
 
 
 
